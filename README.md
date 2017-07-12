@@ -98,4 +98,4 @@
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
 # QR
-![](http://github.com/geeker-lait/geeker-lait.github.io/static/img/lait-qrcode.jpg)
+![](https://github.com/geeker-lait/geeker-lait.github.io/blob/master/statics/img/lait-qrcode.jpg)
