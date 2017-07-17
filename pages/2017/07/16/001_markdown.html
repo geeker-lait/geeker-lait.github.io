@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown 常用命令指南</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--添加百度-->
+    <meta name="baidu-site-verification" content="sOhZbY9AJj" />
+    <!--添加谷歌-->
+    <meta name="google-site-verification" content="gI25vyO70Vad6i0uv323sbOlYrykpT2HAxO_lZIuV0s" />
+    <!--添加bing-->
+    <meta name="msvalidate.01" content="F220604F70BD9962B0E74C21F7322358" />
+    <!--添加360搜索-->
+    <meta name="360-site-verification" content="2556e02dee40785b967dcf85aafe242b" />
+    <meta name="keywords" content="yuri,markdown,命令,jekyll">
+    <meta name="description" content="markdown常用命令指南。markdown标题、列表、链接和图片、引用、粗体和斜体、代码引用和表格的写法。">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="http://www.yygmf.top/res/c/index.css#20170706">
+    <script>(function(win,doc){win.YYRUM={};YYRUM.info={appId:'pAJOSEVdgDXi6N7Gzj4tAwu73Odayb08',beacon:'https://web.uyun.cn/connect',agent:'https://web.uyun.cn/buriedPoint/YYRUM.js'};var loadSource={createScript:function(src){var d=doc,f=d.getElementsByTagName('script')[0],s=d.createElement('script');s.type='text/javascript';s.src=src; f.parentNode.insertBefore(s,f);return s;}};var script=loadSource.createScript(YYRUM.info.agent);win.onerror=function(msg, url,line,col,error){YYRUM.info.errorData={msg:msg,url:url,line:line,col:col,error:error}};if(script.readyState){script.onreadystatechange=function(){if(script.readyState=='loaded'||script.readyState=='complete'){script.onreadystatechange=null; YYRUM.report.installGlobalHandler()}};}else{script.onload=function(){YYRUM.report.installGlobalHandler()};}})(window,document)</script>
+    <!--添加百度推送-->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 引入header部分 -->
+	   <header>
+		<div class="content-header">
+		
+		</div>
+		</header>
+        <!-- 内容部分 -->
+        <div class="content-main" data-spy="scroll" data-target="#toc-container">
+            <div class="content-1020 content-auto">
+                <div id="toc-container">
+				  <table class="toc" id="toc">
+					<tbody>
+					  <tr>
+						<td>
+						  <div id="toctitle">
+							<h2>文章目录</h2>
+						  </div>
+						  <ul class="nav">
+							<li class="toc_level-1 toc_section-1">
+							  <a href="#tocAnchor-1-1"><span class="tocnumber">1</span> <span class="toctext">1.标题</span></a>
+							</li>
+							<li class="toc_level-1 toc_section-2">
+							  <a href="#tocAnchor-1-2"><span class="tocnumber">2</span> <span class="toctext">2. 列表</span></a>
+							  <ul>
+								<li class="toc_level-2 toc_section-3">
+								  <a href="#tocAnchor-1-2-1"><span class="tocnumber">2.1</span> <span class="toctext">1. 无序列表</span></a>
+								</li>
+								<li class="toc_level-2 toc_section-4">
+								  <a href="#tocAnchor-1-2-2"><span class="tocnumber">2.2</span> <span class="toctext">2. 有序列表</span></a>
+								</li>
+							  </ul>
+							</li>
+							<li class="toc_level-1 toc_section-5">
+							  <a href="#tocAnchor-1-5"><span class="tocnumber">3</span> <span class="toctext">3. 链接和图片</span></a>
+							</li>
+							<li class="toc_level-1 toc_section-6">
+							  <a href="#tocAnchor-1-6"><span class="tocnumber">4</span> <span class="toctext">4. 引用</span></a>
+							</li>
+							<li class="toc_level-1 toc_section-7">
+							  <a href="#tocAnchor-1-7"><span class="tocnumber">5</span> <span class="toctext">5. 粗体和斜体</span></a>
+							</li>
+							<li class="toc_level-1 toc_section-8">
+							  <a href="#tocAnchor-1-8"><span class="tocnumber">6</span> <span class="toctext">6. 代码引用</span></a>
+							</li>
+							<li class="toc_level-1 toc_section-9">
+							  <a href="#tocAnchor-1-9"><span class="tocnumber">7</span> <span class="toctext">7. 表格</span></a>
+							</li>
+						  </ul>
+						</td>
+					  </tr>
+					</tbody>
+				  </table>
+				</div><h2 class="title tc">Markdown 常用命令指南</h2>
+
+				<div>
+					<h1 id="tocAnchor-1-1">1.标题</h1>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="gh"># 一级标题</span>
+				<span class="gu">## 二级标题</span>
+				<span class="gu">### 三级标题</span>
+				<span class="gu">#### 四级标题</span>
+				<span class="gu">##### 五级标题</span>
+				<span class="gu">###### 六级标题</span>
+				</code></pre>
+				</div>
+				<!--more-->
+
+				<h1 id="tocAnchor-1-2">2. 列表</h1>
+				<h2 id="tocAnchor-1-2-1">1. 无序列表</h2>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">-</span> 文本1
+				<span class="p">-</span> 文本2
+				<span class="p">-</span> 文本3
+				</code></pre>
+				</div>
+
+				<h2 id="tocAnchor-1-2-2">2. 有序列表</h2>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">1.</span> 文本1
+				<span class="p">2.</span> 文本2
+				<span class="p">3.</span> 文本3
+				</code></pre>
+				</div>
+
+				<h1 id="tocAnchor-1-5">3. 链接和图片</h1>
+				<ul>
+				  <li>超链接
+					<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">百度</span><span class="p">](</span><span class="sx">https://www.baidu.com</span><span class="p">)</span>
+				</code></pre>
+					</div>
+				  </li>
+				  <li>图片
+					<div class="language-markdown highlighter-rouge"><pre class="highlight"><code>!<span class="err">[</span>](图片链接地址)
+				</code></pre>
+					</div>
+				  </li>
+				</ul>
+
+				<h1 id="tocAnchor-1-6">4. 引用</h1>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="gt">&gt; 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 </span>
+				</code></pre>
+				</div>
+
+				<h1 id="tocAnchor-1-7">5. 粗体和斜体</h1>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="ge">*斜体*</span>
+				<span class="gs">**粗体**</span>
+				</code></pre>
+				</div>
+
+				<h1 id="tocAnchor-1-8">6. 代码引用</h1>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code>单行代码使用<span class="sb">`...`</span>包裹
+				多行代码使用<span class="sb">```...```</span>包裹
+				</code></pre>
+				</div>
+
+				<h1 id="tocAnchor-1-9">7. 表格</h1>
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code>| Tables        | Are           | Cool  |
+				| ------------- |:-------------:| -----:|
+				| col 3 is      | right-aligned | $1600 |
+				| col 2 is      | centered      |   $12 |
+				| zebra stripes | are neat      |    $1 |
+				</code></pre>
+				</div>
+
+				<table>
+				  <thead>
+					<tr>
+					  <th>Tables</th>
+					  <th style="text-align: center">Are</th>
+					  <th style="text-align: right">Cool</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>col 3 is</td>
+					  <td style="text-align: center">right-aligned</td>
+					  <td style="text-align: right">$1600</td>
+					</tr>
+					<tr>
+					  <td>col 2 is</td>
+					  <td style="text-align: center">centered</td>
+					  <td style="text-align: right">$12</td>
+					</tr>
+					<tr>
+					  <td>zebra stripes</td>
+					  <td style="text-align: center">are neat</td>
+					  <td style="text-align: right">$1</td>
+					</tr>
+				  </tbody>
+				</table>
+
+				<div class="language-markdown highlighter-rouge"><pre class="highlight"><code>dog | bird | cat
+				----|------|----
+				foo | foo  | foo
+				bar | bar  | bar
+				baz | baz  | baz
+				</code></pre>
+				</div>
+
+				<table>
+				  <thead>
+					<tr>
+					  <th>dog</th>
+					  <th>bird</th>
+					  <th>cat</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>foo</td>
+					  <td>foo</td>
+					  <td>foo</td>
+					</tr>
+					<tr>
+					  <td>bar</td>
+					  <td>bar</td>
+					  <td>bar</td>
+					</tr>
+					<tr>
+					  <td>baz</td>
+					  <td>baz</td>
+					  <td>baz</td>
+					</tr>
+				  </tbody>
+				</table>
+
+					<aside class="sidebar">
+					<div class="icon-aside icon-sidebar icon-active"><div class="switch-sidebar"></div></div>
+					<div class="icon-aside icon-top hidden"><div class="switch-top"></div></div>
+				</aside>
+				</div>  
+            </div>         
+        </div>
+    </div>
+    <script src="http://www.yygmf.top/res/j/jquery.min.js#20170707"></script>
+    <script src="http://www.yygmf.top/res/j/bootstrap.min.js#20170706"></script>
+    <!--<script src="/res/j/jquery.lazyload.js#20170706"></script>-->
+    <!--<script src="/res/j/lazy.min.js"></script>-->
+    <script>
+        (function() {
+            var _bodyEle = $('body'),
+                _wrapperEle = $('.content-main');
+
+            // window.onload = function() {
+            //     _bodyEle.addClass("loaded");
+            // }
+            $(document).ready(function() {
+                _bodyEle.addClass("loaded");
+                // console.log($("img.lazy-load").lazyload);
+                // $("img.lazy-load").lazyload();
+            })
+
+            // console.log(document.querySelector('.nav-logo-container'));
+            var _navEle = $('.nav-logo-container'),
+                _navContent = $('nav'),
+                _closeEle = $('.nav-close');
+
+            _navEle.bind('click', function () {
+                _navEle.toggleClass("nav-close");
+                _navContent.toggleClass("show");
+            })
+
+            // _navEle.onclick = function() {
+            //     var _cls = _navEle.className;
+            //     if (_cls.indexOf('nav-close') > -1) {
+            //         _navEle.className = 'nav-logo-container';
+            //         _navContent.className = "";
+            //     }
+            //     else {
+            //         _navEle.className = 'nav-logo-container nav-close';
+            //         _navContent.className = "show";
+            //     }
+            // };
+            // _wrapperEle.bind('click', function() {
+            //     _navEle.toggleClass("nav-close");
+            //     _navContent.toggleClass("show");
+            // })
+            // _wrapperEle.onclick = function() {
+            //     _navEle.className = 'nav-logo-container';
+            //     _navContent.className = "";
+            // }
+
+            // document.querySelector('.nav-logo').click(function() {
+            //     document.getElementsByTagName('nav')[0].classList.add('show');
+            // });
+            var icon_sidebar = $('.icon-sidebar'),
+                _sidebar = $('#toc-container'),
+                _content = $('.content-1020');
+            
+            if (_sidebar.length > 0) {
+                _content.removeClass('content-auto');
+            }
+
+            // console.log(_sidebar);
+            icon_sidebar.bind('click', function() {
+                icon_sidebar.toggleClass('icon-active');
+                _sidebar.toggleClass('sidebar-hidden');
+                _content.toggleClass('content-auto');
+            });
+
+
+            $('.content-main').scroll(function() {
+                var _s = $('.content-main').scrollTop();
+                // console.log($('.content-main').scrollTop());
+                if (_s > 0)
+                    $('.icon-top').removeClass('hidden');
+                else
+                    $('.icon-top').addClass('hidden');
+
+                // 简易的添加一个图片懒加载
+                var _img = $('.lazy-load');
+
+                _img.each(function() {
+                    var _src = $(this).data('src'),
+                        _imgTop = $(this).offset().top,
+                        _windowHeight = $(window).height(),
+                        _ifElse = (_s + _windowHeight) >= _imgTop + 200,
+                        _t = this;
+                    // this.src = _src;
+                    if (_ifElse) {
+                        this.src= _src;
+                    }
+                });
+            });
+
+            _wrapperEle.on('click', '.icon-top', function() {
+                $('.content-main').animate({scrollTop: 0}, 500);
+            });
+
+
+            // $('.icon-top').click(function() {
+            //     // console.log(111);
+                
+            // });
+        })(window);
+    </script>
+</body>
+</html>
